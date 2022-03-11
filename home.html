@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+  padding-top: 100px;
+}
+    .fixed-header{
+        width: 100%;
+        position: fixed;
+        background: blue;
+        padding: 5px 0;
+        color: white;
+        top: 0;
+        text-align: center;
+    }
+    
+    .Start-Over{
+        height: 15%;
+        width: 20%;
+      bottom: 0;
+      position: fixed;
+      left: 0;
+    }
+    
+    #create-task{
+        position: fixed;
+        height: 15%;
+    width: 20%;
+      display: block;
+      margin-left: 40%;
+      margin-right: 40%;
+       
+    }
+    
+   #View-Schedule{
+    height: 15%;
+    width: 20%;
+     bottom: 0;
+      position: fixed;
+      right: 0;
+   }
+    </style>
+    <script src="myscript.js"></script>
+    </head>
+<body>
+
+<div class="fixed-header">
+        
+    <h1> Daily Planner </h1>
+</div>
+
+<div>
+  <button id="create-task" onclick= "createPopUp()"> Create Task </button>
+
+<button id="View-Schedule" onclick="createPopUp('schedule.html')"> View Schedule </button>
+<button class = "Start-Over" onclick="areYouSure('Start Over')"> Start Over </button>
+</div>
+
+</body>
+</html>
